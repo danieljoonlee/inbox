@@ -34,7 +34,7 @@ beforeEach(async () => {
      // calling deploy does not deploy, starts to create an object that can be deployed into network
     .deploy({ data: bytecode, arguments: [INITIAL_STRING] }) 
      // send triggers communication from web3 to network/provider;1 million; instructs web3 to send out a transaction that creates this contract
-    .send({ from: accounts[0], gas: '1000000' })
+    .send({ from: accounts[0], gas: '1000000' });
 
   inbox.setProvider(provider);
 });
